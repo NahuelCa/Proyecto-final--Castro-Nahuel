@@ -1,0 +1,27 @@
+section {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    }
+    
+    section img {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    filter: contrast(75%);
+    transition: .5s ease;
+    }
+    
+    section p.caption {
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    }
+    
+    section img:hover {
+    cursor: crosshair;
+    width: 220px;
+    height: 400px;
+    opacity: 1;
+    filter: contrast(120%);
+    }

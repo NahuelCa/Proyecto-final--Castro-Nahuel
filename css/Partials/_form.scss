@@ -1,0 +1,49 @@
+.infoContacto {
+    padding: 9rem;
+    text-align: center;
+    -webkit-animation: entradaIzquierda 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.7s both;
+    animation: entradaIzquierda 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.7s both;
+    }
+    
+    .infoContacto p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #8FC8DB;
+    padding: .5rem 0 1rem 0;
+    }
+    
+    .infoContacto p:last-child {
+    border: 0;
+    }
+    
+    .formContacto {
+    padding: 9rem;
+    -webkit-animation: entradaDerecha 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.8s both;
+    animation: entradaDerecha 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.8s both;
+    }
+    
+    .formContacto input, .formContacto label, .formContacto select, .formContacto textarea {
+    font-size: 1.6rem;
+    }
+    
+    .formContacto input.form-control, .formContacto select.form-select {
+    height: 5rem;
+    }
+    
+    .formContacto .form-control:focus ~ label, .formContacto .form-floating > .form-control:not(:placeholder-shown) ~ label, .formContacto .form-select ~ label {
+    -webkit-transform: scale(0.75) translateY(-0.8rem);
+    transform: scale(0.75) translateY(-0.8rem);
+    }
+    
+    .formContacto__boton {
+    font-size: 1.6rem;
+    padding: .8rem 2.4rem;
+    background: #DDA0DD;
+    border: 0;
+    border-radius: 0;
+    }
+    
+    .formContacto__boton:hover {
+    background: #D87093;
+    }

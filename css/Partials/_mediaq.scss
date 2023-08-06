@@ -1,0 +1,250 @@
+@media screen and (max-width: 576px) {
+    .home {
+    grid-template-areas: "logo" "productos" "servicios" "quienSoy" "contacto";
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home {
+    grid-template-areas: "logo logo"
+    "productos servicios"
+    "quienSoy contacto";
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    }
+    }
+    
+    @media screen and (max-width: 576px) {
+    .home__logo {
+    -webkit-animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home__logo:not(.home__logo) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    }
+    }
+    
+    @media screen and (max-width: 576px) {
+    .home__logo::before {
+    background-position: center top -20px;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home__logo::before {
+    background-position: center top -90px;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    }
+    }
+    
+    @media screen and (max-width: 576px) {
+    .home__logo {
+    padding-left: 2rem;
+    background-position: top;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home__logo {
+    padding-left: 2rem;
+    padding-top: 3rem;
+    }
+    }
+    
+    @media screen and (max-width: 576px) {
+    .home__quienSoy {
+    -webkit-animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home__quienSoy:not(.home__logo) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    }
+    }
+    
+    @media screen and (max-width: 576px) {
+    .home__quienSoy p {
+    -webkit-transform: none;
+    transform: none;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #D87093;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home__quienSoy p {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #D87093;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    }
+    
+    @media screen and (max-width: 576px) {
+    .home__servicios {
+    -webkit-animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home__servicios:not(.home__logo) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    }
+    } 
+    
+    @media screen and (max-width: 576px) {
+    .home__servicios p {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #D87093;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home__servicios p {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #D87093;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    }
+    
+    @media screen and (max-width: 576px) {
+    .home__productos {
+    -webkit-animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home__productos:not(.home__logo) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    }
+    }
+    
+    @media screen and (max-width: 576px) {
+    .home__productos p {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #D87093;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home__productos p {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #D87093;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    }
+    
+    @media screen and (max-width: 576px) {
+    .home__contacto {
+    -webkit-animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home__contacto:not(.home__logo) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    }
+    }
+    
+    @media screen and (max-width: 576px) {
+    .home__contacto p {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #D87093;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    }
+    
+    @media screen and (max-width: 992px) {
+    .home__contacto p {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #D87093;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    }
+    
+    @media (max-width: 576px) {
+    h1{
+    font-size: 1em;
+    }
+    h2 {
+    font-size: 0,5em;
+    }
+    }
+    
+    @media (max-width: 992px) {
+    h1{
+    font-size: 2em;
+    }
+    h2 {
+    font-size: 1em;
+    }
+    }
+    

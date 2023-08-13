@@ -36,14 +36,15 @@ h2 {
   color: #D87093;
   font-family: "Viner Hand ITC";
   font-size: 1, 5em;
+  padding-top: 2%;
   text-shadow: black 0.1em 0.1em 0.2em;
   display: flex;
   justify-content: center;
-  animation: subeBaja 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
 }
 
 p {
   color: #555;
+  padding-left: 1em;
 }
 
 .container-fluid {
@@ -147,59 +148,6 @@ section img:hover {
   font-family: "Meddon", cursive;
   font-size: 3em;
   text-shadow: black 0.1em 0.1em 0.2em;
-}
-
-.home__logo:not(.home__logo):hover::before {
-  content: "";
-  position: absolute;
-  width: 150px;
-  height: 300%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  background: linear-gradient(-45deg, #DDA0DD, #FFB6C1);
-  animation: bordeHome 6s linear infinite;
-  z-index: -2;
-}
-
-.home__logo:not(.home__logo):hover::after {
-  content: "";
-  position: absolute;
-  inset: 3px 3px 0 0;
-  z-index: -1;
-}
-
-.home__logo:not(.home__logo):hover p {
-  opacity: 1;
-}
-
-.home__logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  color: #24414a;
-}
-
-.home__logo::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/home.jpg);
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  filter: blur(2px);
-  transition: filter 0.2s linear, transform 0.2s ease-in-out;
-}
-
-.home__logo:hover {
-  color: #24414a;
 }
 
 .home__logo:hover::before {
@@ -409,64 +357,55 @@ section img:hover {
   background: #D87093;
 }
 
-@media screen and (max-width: 576px) {
+/* Media query para pantallas medianas (por ejemplo, tablets) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  h1 {
+  color: #FFD700;
+  font-family: "Meddon", cursive;
+  font-size: 1.5em;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+  h2 {
+  color: #D87093;
+  font-family: "Viner Hand ITC";
+  font-size: 1.2em;
+  padding-top: 2%;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  display: flex;
+  justify-content: center;
+}
+
+  p {
+  color: #555;
+  padding-left: 1em;
+}
   .home {
     grid-template-areas: "logo" "productos" "servicios" "quienSoy" "contacto";
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
   }
-}
-@media screen and (max-width: 992px) {
-  .home {
-    grid-template-areas: "logo logo" "productos servicios" "quienSoy contacto";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-}
-@media screen and (max-width: 576px) {
+
   .home__logo {
     animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
+  
+  .home__logo h1 {
+  color: #FFD700;
+  font-family: "Meddon", cursive;
+  font-size: 2em;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
-@media screen and (max-width: 992px) {
-  .home__logo:not(.home__logo) {
-    flex-direction: row;
-  }
-}
-@media screen and (max-width: 576px) {
-  .home__logo::before {
-    background-position: center top -20px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .home__logo::before {
-    background-position: center top -90px;
-    filter: blur(1px);
-  }
-}
-@media screen and (max-width: 576px) {
+
   .home__logo {
     padding-left: 2rem;
     background-position: top;
   }
-}
-@media screen and (max-width: 992px) {
-  .home__logo {
-    padding-left: 2rem;
-    padding-top: 3rem;
-  }
-}
-@media screen and (max-width: 576px) {
+  
   .home__quienSoy {
     animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
-}
-@media screen and (max-width: 992px) {
-  .home__quienSoy:not(.home__logo) {
-    flex-direction: row;
-  }
-}
-@media screen and (max-width: 576px) {
+  
   .home__quienSoy p {
     transform: none;
     font-size: 2rem;
@@ -475,95 +414,39 @@ section img:hover {
     color: #D87093;
     text-shadow: black 0.1em 0.1em 0.2em;
   }
-}
-@media screen and (max-width: 992px) {
-  .home__quienSoy p {
-    transform: none;
-    opacity: 1;
-    font-size: 2rem;
-    font-weight: 400;
-    color: #D87093;
-    text-shadow: black 0.1em 0.1em 0.2em;
-  }
-}
-@media screen and (max-width: 576px) {
+  
   .home__servicios {
     animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
-}
-@media screen and (max-width: 992px) {
-  .home__servicios:not(.home__logo) {
-    flex-direction: row;
-  }
-}
-@media screen and (max-width: 576px) {
+  
   .home__servicios p {
     transform: none;
-    opacity: 1;
     font-size: 2rem;
     font-weight: 600;
     background-color: transparent;
     color: #D87093;
     text-shadow: black 0.1em 0.1em 0.2em;
   }
-}
-@media screen and (max-width: 992px) {
-  .home__servicios p {
-    transform: none;
-    opacity: 1;
-    font-size: 3rem;
-    font-weight: 600;
-    background-color: transparent;
-    color: #D87093;
-    text-shadow: black 0.1em 0.1em 0.2em;
-  }
-}
-@media screen and (max-width: 576px) {
+  
   .home__productos {
     animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
-}
-@media screen and (max-width: 992px) {
-  .home__productos:not(.home__logo) {
-    flex-direction: row;
-  }
-}
-@media screen and (max-width: 576px) {
+  
   .home__productos p {
     transform: none;
-    opacity: 1;
     font-size: 2rem;
     font-weight: 600;
     background-color: transparent;
     color: #D87093;
     text-shadow: black 0.1em 0.1em 0.2em;
   }
-}
-@media screen and (max-width: 992px) {
-  .home__productos p {
-    transform: none;
-    opacity: 1;
-    font-size: 3rem;
-    font-weight: 600;
-    background-color: transparent;
-    color: #D87093;
-    text-shadow: black 0.1em 0.1em 0.2em;
-  }
-}
-@media screen and (max-width: 576px) {
+  
   .home__contacto {
     animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
-}
-@media screen and (max-width: 992px) {
-  .home__contacto:not(.home__logo) {
-    flex-direction: row;
-  }
-}
-@media screen and (max-width: 576px) {
+  
   .home__contacto p {
     transform: none;
-    opacity: 1;
     font-size: 2rem;
     font-weight: 600;
     background-color: transparent;
@@ -571,33 +454,105 @@ section img:hover {
     text-shadow: black 0.1em 0.1em 0.2em;
   }
 }
-@media screen and (max-width: 992px) {
-  .home__contacto p {
+
+/* Media query para pantallas pequeñas (por ejemplo, smartphones) */
+@media (max-width: 767px) {
+	
+  h1 {
+  color: #FFD700;
+  font-family: "Meddon", cursive;
+  font-size: 1.2em;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+  h2 {
+  color: #D87093;
+  font-family: "Viner Hand ITC";
+  font-size: 0.9em;
+  padding-top: 2%;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  display: flex;
+  justify-content: center;
+}
+
+  p {
+  color: #555;
+  padding-left: 1em;
+}
+  .home {
+    grid-template-areas: "logo" "productos" "servicios" "quienSoy" "contacto";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+  }
+
+  .home__logo {
+    animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  }
+  
+  .home__logo {
+    padding-left: 2rem;
+    background-position: top;
+  }
+  
+  .home__logo h1 {
+  color: #FFD700;
+  font-family: "Meddon", cursive;
+  font-size: 1.5em;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+  
+  .home__quienSoy {
+    animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  }
+  
+  .home__quienSoy p {
     transform: none;
-    opacity: 1;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     background-color: transparent;
     color: #D87093;
     text-shadow: black 0.1em 0.1em 0.2em;
   }
-}
-@media (max-width: 576px) {
-  h1 {
-    font-size: 1em;
+  
+  .home__servicios {
+    animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
-  h2 {
-    font-size: 0, 5em;
+  
+  .home__servicios p {
+    transform: none;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #D87093;
+    text-shadow: black 0.1em 0.1em 0.2em;
   }
-}
-@media (max-width: 992px) {
-  h1 {
-    font-size: 2em;
+  
+  .home__productos {
+    animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   }
-  h2 {
-    font-size: 1em;
+  
+  .home__productos p {
+    transform: none;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #D87093;
+    text-shadow: black 0.1em 0.1em 0.2em;
   }
-}
+  
+  .home__contacto {
+    animation: entradaArriba 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  }
+  
+  .home__contacto p {
+    transform: none;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #D87093;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+
 @keyframes entradaIzquierda {
   0% {
     transform: rotateY(100deg);
